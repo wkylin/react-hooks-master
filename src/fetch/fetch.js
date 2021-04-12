@@ -61,9 +61,6 @@ const fetch_retry = async (url, options, n) => {
   }
   throw error
 }
-<<<<<<< HEAD
-let response = fetch_retry('/someUrl/json', options, 10)
-=======
 
 // https://medium.com/better-programming/deep-insights-into-javascripts-fetch-api-e8e8203c0965
 // let controller = new AbortController()
@@ -80,4 +77,3 @@ let response = fetch_retry('/someUrl/json', options, 10)
 //     throw err
 //   }
 // }
->>>>>>> b942fcc52c2f63e18e57c3ef5cc2822c8cd90b2a
