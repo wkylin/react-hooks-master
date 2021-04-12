@@ -43,24 +43,24 @@ function handleTextResponse(response) {
   })
 }
 
-const fetch_retry = async (url, options, n) => {
-  let error
-  for (let i = 0; i < n; i++) {
-    try {
-      response = await fetch(url, options)
-      if (response === 200) {
-        return response
-      } else {
-        throw new Error(response)
-      }
-    } catch (err) {
-      error = err
-      //1.
-      if (i + 1 === n) throw err
-    }
-  }
-  throw error
-}
+// const fetch_retry = async (url, options, n) => {
+//   let error
+//   for (let i = 0; i < n; i++) {
+//     try {
+//       response = await fetch(url, options)
+//       if (response === 200) {
+//         return response
+//       } else {
+//         throw new Error(response)
+//       }
+//     } catch (err) {
+//       error = err
+//       //1.
+//       if (i + 1 === n) throw err
+//     }
+//   }
+//   throw error
+// }
 
 // https://medium.com/better-programming/deep-insights-into-javascripts-fetch-api-e8e8203c0965
 // let controller = new AbortController()
